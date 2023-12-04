@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Datos de Firebase</title>
+
+  <!-- Agrega las bibliotecas de Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>Encuesta de Satisfacción</h1>
+    <h4>¿Qué tan satisfecho se encuentra con los servicios de Sport Store?</h4>
+  </header>
+  <!-- Agrega un contenedor para mostrar el gráfico, se puede ajustar el tamaño de acuerdo al porcentaje-->
+  <div id="graficoContainer" style="width: 40%; margin: auto;">
+    <canvas id="graficoCalificaciones" height="200"></canvas>
+  </div><br>
+  <script src="script.js"></script>
+</body>
+</html>
